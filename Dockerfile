@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 python:latest
+FROM --platform=linux/amd64 python:3.11.5-slim-bullseye
 # FROM python:3.10.4-slim-bullseye
 
 

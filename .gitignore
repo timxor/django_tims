@@ -1,5 +1,4 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+.venv
+__pycache__/
+db.sqlite3
+.DS_Store  # Mac only

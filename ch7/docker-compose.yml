@@ -14,8 +14,8 @@ services:
   db:
     image: postgres:13
     volumes:
-      - postgres_data:/var/lib/postgresql/data/
-      # - postgres_data:/Users/tim/postgresql/v13/data/
+      # - postgres_data:/var/lib/postgresql/data/
+      - postgres_data:/Users/tim/postgresql/v13/data/
     environment:
       - "POSTGRES_HOST_AUTH_METHOD=trust"
 

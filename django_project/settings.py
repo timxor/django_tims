@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -146,7 +145,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"  # new
 
 # sendgrid email config
 EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
-SENDGRID_API_KEY = os.environ["SENDGRID_API_KEY"]
+SENDGRID_API_KEY = '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'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey'
 EMAIL_HOST_PASSWORD = SENDGRID_API_KEY

@@ -3,9 +3,9 @@ version: "3.9"
 services:
   web:
     build: .
-    command: python /Users/tim/code/djangoforprofessionals/ch7-static-assets/code/manage.py runserver 0.0.0.0:8000
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      - .:/code
+      - .:/Users/tim/code/django_tims
     ports:
       - 8000:8000
     depends_on:
@@ -14,6 +14,7 @@ services:
     image: postgres:13
     volumes:
       - postgres_data:/var/lib/postgresql/data/
+      # - postgres_data:/Users/tim/postgresql/v13/data/
     environment:
       - "POSTGRES_HOST_AUTH_METHOD=trust"
 

@@ -1,4 +1,5 @@
-FROM --platform=linux/amd64 python:3.11.5-slim-bullseye
+FROM python:3.11.5-slim-bullseye
+# FROM --platform=linux/amd64 python:3.11.5-slim-bullseye
 # FROM python:3.10.4-slim-bullseye
 
 
@@ -8,7 +9,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # Set work directory
-WORKDIR /Users/tim/code/django_tims
+WORKDIR /django_tims
 
 # Install dependencies
 COPY ./requirements.txt .
